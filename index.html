@@ -6,12 +6,19 @@ var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 if(isAndroid) {
 	// Do something!
 	// Redirect to Android-site?
-	window.location = 'https://play.google.com/store/apps/details?id=com.app.snapdate';
+	//window.location = 'https://play.google.com/store/apps/details?id=com.app.snapdate';
+	  setTimeout(function(){
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.app.snapdate';
+         }, 5000);
 }
 else
 {
 	window.location = 'ios.html';
 }
 </script>
+	</head>
+	<body>
+	<center><h1>Loading..</h1></center>
 </body>
+	
 </html>
